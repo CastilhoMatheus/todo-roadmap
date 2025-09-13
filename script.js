@@ -1,6 +1,6 @@
-taskInput = document.getElementById("taskInput");
-addTaskBtn = document.getElementById("addTaskBtn");
-taskList = document.getElementById("taskList");
+const taskInput = document.getElementById("taskInput");
+const addTaskBtn = document.getElementById("addTaskBtn");
+const taskList = document.getElementById("taskList");
 
 function AddTask() {
   const inputText = taskInput.value;
@@ -14,7 +14,7 @@ function AddTask() {
 }
 
 taskInput.addEventListener("keydown", (event) => {
-  if (event.keyCode == 13) {
+  if (event.key === "Enter") {
     AddTask();
   }
 });
