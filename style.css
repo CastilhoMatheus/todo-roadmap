@@ -75,6 +75,7 @@ h1 {
 
 #taskList li:hover {
   background: #e0e7ef;
+  cursor: pointer;
 }
 
 #taskList li.completed {

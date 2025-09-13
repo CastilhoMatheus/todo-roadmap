@@ -8,6 +8,9 @@ function AddTask() {
   if (inputText !== "") {
     const li = document.createElement("li");
     li.textContent = inputText;
+    li.addEventListener("click", () => {
+      li.classList.toggle("completed");
+    });
     taskList.appendChild(li);
     taskInput.value = "";
   }
